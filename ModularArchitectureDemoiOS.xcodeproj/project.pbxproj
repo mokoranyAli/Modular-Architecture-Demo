@@ -13,7 +13,32 @@
 		87B638D824B11BC8000D4E76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B638D624B11BC8000D4E76 /* Main.storyboard */; };
 		87B638DA24B11BC8000D4E76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B638D924B11BC8000D4E76 /* Assets.xcassets */; };
 		87B638DD24B11BC8000D4E76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B638DB24B11BC8000D4E76 /* LaunchScreen.storyboard */; };
+		87B6390224B11DA1000D4E76 /* FilterSearchFeature.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 87B638FE24B11C42000D4E76 /* FilterSearchFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87B638FD24B11C42000D4E76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87B638F924B11C41000D4E76 /* FilterSearchFeature.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 87B638EE24B11C41000D4E76;
+			remoteInfo = FilterSearchFeature;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		87B6390124B11D8F000D4E76 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				87B6390224B11DA1000D4E76 /* FilterSearchFeature.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		87B638CD24B11BC8000D4E76 /* ModularArchitectureDemoiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularArchitectureDemoiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +49,7 @@
 		87B638D924B11BC8000D4E76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87B638DC24B11BC8000D4E76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87B638DE24B11BC8000D4E76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87B638F924B11C41000D4E76 /* FilterSearchFeature.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FilterSearchFeature.xcodeproj; path = ../FilterSearchFeature/FilterSearchFeature.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +66,7 @@
 		87B638C424B11BC8000D4E76 = {
 			isa = PBXGroup;
 			children = (
+				87B638F924B11C41000D4E76 /* FilterSearchFeature.xcodeproj */,
 				87B638CF24B11BC8000D4E76 /* ModularArchitectureDemoiOS */,
 				87B638CE24B11BC8000D4E76 /* Products */,
 			);
@@ -67,6 +94,14 @@
 			path = ModularArchitectureDemoiOS;
 			sourceTree = "<group>";
 		};
+		87B638FA24B11C41000D4E76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87B638FE24B11C42000D4E76 /* FilterSearchFeature.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +112,7 @@
 				87B638C924B11BC8000D4E76 /* Sources */,
 				87B638CA24B11BC8000D4E76 /* Frameworks */,
 				87B638CB24B11BC8000D4E76 /* Resources */,
+				87B6390124B11D8F000D4E76 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -113,12 +149,28 @@
 			mainGroup = 87B638C424B11BC8000D4E76;
 			productRefGroup = 87B638CE24B11BC8000D4E76 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 87B638FA24B11C41000D4E76 /* Products */;
+					ProjectRef = 87B638F924B11C41000D4E76 /* FilterSearchFeature.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				87B638CC24B11BC8000D4E76 /* ModularArchitectureDemoiOS */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		87B638FE24B11C42000D4E76 /* FilterSearchFeature.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FilterSearchFeature.framework;
+			remoteRef = 87B638FD24B11C42000D4E76 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		87B638CB24B11BC8000D4E76 /* Resources */ = {
